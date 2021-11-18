@@ -26,5 +26,8 @@ model = AxialMLP3d(
    num_layers=6,    # Number of Axial-MLP blocks
    filters=8,       # Number of filters in the hidden layers
    dropout_rate=0   # Dropout rate, between 0 and 1.
- )
+)
+
+x = torch.zeros(batch_size, in_channels, input_depth, input_height, input_width)
+y = model(x) # has shape (batch_size, out_channels, input_depth, input_height, input_width)
 ```
