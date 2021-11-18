@@ -1,11 +1,17 @@
 # Axial-MLP
-Implementation of Axial-MLP in PyTorch
+Offical implementation of Axial-MLP in PyTorch
 
 Code for the paper
 
 **Axial multi-layer perceptron architecture for automatic segmentation of choroid plexus in multiple sclerosis**  
 Marius Schmidt-Mengin, Vito A. G. Ricigliano, Benedetta Bodini, Emanuele Morena, Annalisa Colombi, Mariem Hamzaoui, Arya Yazdan Panah, Bruno Stankoff, Olivier Colliot  
 SPIE Medical Imaging 2022
+
+# Requirements
+
+- PyTorch
+- Numpy
+- unfoldNd (https://github.com/f-dangel/unfoldNd) by Felix Dangel as the fold/unfold functions of PyTorch currently do not support volumetric inputs. 
 
 # Usage
 ```python
